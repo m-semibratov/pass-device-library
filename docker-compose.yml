@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  db:
+   image: "mysql/mysql-server:8.0"
+   environment:
+    - MYSQL_DATABASE=pass_device_library
+    - MYSQL_USER=pass_device_library
+    - MYSQL_PASSWORD=pass_device_library
+   ports:
+     - "3306:3306"
